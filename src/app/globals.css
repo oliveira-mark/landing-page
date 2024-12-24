@@ -19,14 +19,14 @@
 }
 :root {
   --color-primary: #7E43FF;
-  --color-secondary: #566073;
+  --color-secondary: #08090a;
   --color-details: #e4e9f5;
   --color-bg: #fff;
-  --color-text: #566073;
+  --color-text: #08090a;
 }
 
 body {
-  color: var(--color-primary);
+  color: var(--color-text);
   background: var(--color-bg);
   font-family: Arial, Helvetica, sans-serif;
 }

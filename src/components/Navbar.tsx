@@ -4,7 +4,7 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <header className="bg-opacity-70 bg-white backdrop-blur-md fixed top-0 left-0 right-0 border-b border-gray-200 z-20">
-      <nav className="container max-w-[1200px] py-5 flex items-center justify-between mx-auto">
+      <nav className="container max-w-[1200px] p-4 flex items-center justify-between mx-auto">
         <Link href="/">
           <div className="flex items-center text-[var(--color-text)] gap-2">
             <Image 
