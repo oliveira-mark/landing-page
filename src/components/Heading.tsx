@@ -2,7 +2,8 @@ import Image from "next/image";
 
 const Heading = () => {
   return (
-    <h1 className="text-[2.5rem] max-w-[800px] mx-auto leading-[1.2] mb-6">
+    <h1 className="text-[2.5rem] max-w-[800px] mx-auto leading-[1.4] mb-0">
+      A digital&nbsp;
       <span className="relative w-full h-full border-2 border-[#793ffa] px-1.5 py-0">
       <span className="absolute w-2.5 h-2.5 border-2 border-[#793ffa] left-[-6px] top-[-6px] bg-white"></span>
       <span className="absolute w-2.5 h-2.5 border-2 border-[#793ffa] left-[-6px] bottom-[-6px] bg-white"></span>
@@ -25,15 +26,9 @@ const Heading = () => {
           </filter>
         </defs>
       </svg>
-        Corte gastos
+       Personal Shopper
       </span>
-        com hospedagem, e-mail profissional e&nbsp;
-      <span
-        className="relative"
-      >
-        criação de site!
-        <div className="bg-gradient-to-r from-[#531bce6b] to-[#793ffa4d] opacity-70 h-[25px] absolute bottom-0 left-0 w-[102%] z-[-1]"></div>
-      </span>
+      &nbsp;that does the selling for you!
     </h1>
   );
 };

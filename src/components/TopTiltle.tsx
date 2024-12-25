@@ -41,7 +41,7 @@ const TopTiltle = () => {
       <p
         className="text-[var(--color-text)] font-medium text-[0.9rem] leading-[1.1] text-center pr-3 pl-3 ml-2 border-l border-[#EBEBEB] py-1"
       >
-        Trusted by 1,500+ Figma users for seamless design!
+        A product recommendation quiz for your eCommerce!
       </p>
     </div>
   );
