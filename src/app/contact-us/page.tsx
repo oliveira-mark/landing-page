@@ -1,6 +1,40 @@
+'use client'
+import { useState } from "react";
 import Image from "next/image";
 
 export default function ContactUs() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [errors, setErrors] = useState<any>({});
+
+  const validate = () => {
+    const newErrors: any = {};
+    if (!name) {
+      newErrors.name = "Name is required.";
+    }
+    if (!email) {
+      newErrors.email = "Email is required.";
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = "Email is invalid.";
+    }
+    if (!message) {
+      newErrors.message = "Message is required.";
+    }
+
+    return newErrors;
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const validationErrors = validate();
+    if (Object.keys(validationErrors).length === 0) {
+
+    } else {
+      setErrors(validationErrors);
+    }
+  };
+
   return (
     <div className="flex min-h-screen pt-32">
       <main className="flex flex-col gap-1 row-start-2 items-center justify-items-center text-center w-full">
@@ -12,8 +46,7 @@ export default function ContactUs() {
         </p>
 
         <form
-          action=""
-          method=""
+          onSubmit={handleSubmit}
           className="bg-gradient-to-b from-[#f3efff] via-[#fcfbff] to-transparent border border-[#f6edff] p-[50px] px-[20px] sm:px-[40px] rounded-[12px] max-w-[500px] mx-2 sm:mx-auto my-[50px] text-left"
         >
           <Image
@@ -32,6 +65,7 @@ export default function ContactUs() {
               Fill out the form below and we'll get back to you shortly!
             </strong>
           </p>
+
           <label className="block" htmlFor="name">
             Your Name
           </label>
@@ -39,8 +73,12 @@ export default function ContactUs() {
             className="p-[15px] w-full border border-[#e5e5e5] mt-[2px] mb-[10px] rounded-[4px]"
             type="text"
             name="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             placeholder="Type your name..."
           />
+          {errors.name && <p className="text-red-400 text-sm relative top-[-8px]">{errors.name}</p>}
+
           <label className="block" htmlFor="email">
             Your Email
           </label>
@@ -48,17 +86,25 @@ export default function ContactUs() {
             className="p-[15px] w-full border border-[#e5e5e5] mt-[2px] mb-[10px] rounded-[4px]"
             type="email"
             name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder="Type your email..."
           />
+          {errors.email && <p className="text-red-400 text-sm relative top-[-8px]">{errors.email}</p>}
+
           <label className="block" htmlFor="message">
             Your Message
           </label>
           <textarea
             className="p-[15px] w-full border border-[#e5e5e5] mt-[2px] mb-[10px] rounded-[4px]"
             name="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             placeholder="Type your message..."
-            rows="4"
+            rows={4}
           />
+          {errors.message && <p className="text-red-400 text-sm relative top-[-8px]">{errors.message}</p>}
+
           <button
             type="submit"
             className="inline-flex bg-gradient-to-r from-[#531bce] to-[#793ffa] text-white px-6 py-4 rounded-md font-bold text-[0.9rem] border border-[#9868ff] relative mt-1"
