@@ -1,31 +1,38 @@
-'use client'
-import { useState } from "react";
-import Image from "next/image";
+'use client';
+import { useState } from 'react';
+import Image from 'next/image';
+
+interface Errors {
+  name?: string;
+  email?: string;
+  password?: string;
+  confirmPassword?: string;
+}
 
 export default function GetStarted() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-  const [errors, setErrors] = useState<any>({});
+  const [name, setName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const [confirmPassword, setConfirmPassword] = useState<string>('');
+  const [errors, setErrors] = useState<Errors>({});
 
-  const validate = () => {
-    const newErrors: any = {};
+  const validate = (): Errors => {
+    const newErrors: Errors = {};
     if (!name) {
-      newErrors.name = "Name is required.";
+      newErrors.name = 'Name is required.';
     }
     if (!email) {
-      newErrors.email = "Email is required.";
+      newErrors.email = 'Email is required.';
     } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = "Email is invalid.";
+      newErrors.email = 'Email is invalid.';
     }
     if (!password) {
-      newErrors.password = "Password is required.";
+      newErrors.password = 'Password is required.';
     } else if (password.length < 6) {
-      newErrors.password = "Password must be at least 6 characters.";
+      newErrors.password = 'Password must be at least 6 characters.';
     }
     if (password !== confirmPassword) {
-      newErrors.confirmPassword = "Passwords do not match.";
+      newErrors.confirmPassword = 'Passwords do not match.';
     }
 
     return newErrors;
@@ -44,7 +51,9 @@ export default function GetStarted() {
   return (
     <div className="flex min-h-screen pt-32">
       <main className="flex flex-col gap-1 row-start-2 items-center justify-items-center text-center w-full">
-        <h1 className="text-[1.7rem] sm:text-[2.5rem] max-w-[800px] mx-auto leading-[1.4] mb-1">Get started with a free plan</h1>
+        <h1 className="text-[1.7rem] sm:text-[2.5rem] max-w-[800px] mx-auto leading-[1.4] mb-1">
+          Get started with a free plan
+        </h1>
         <p className="max-w-[800px] mx-auto text-[0.9rem] sm:text-[1.1rem] leading-[1.5] text-center opacity-75">
           Sales With QuizCommerce guides your customers throughout their shopping experience and helps them find the right products for them.
         </p>
@@ -60,9 +69,7 @@ export default function GetStarted() {
             height={65}
             className="mb-2"
           />
-          <h2 className="text-[28px] font-semibold mb-2">
-            Sign up, it's free!
-          </h2>  
+          <h2 className="text-[28px] font-semibold mb-2">Sign up, it&apos;s free!</h2>
           <p className="text-[16px] opacity-75 mb-4">
             Join thousands of businesses using QuizCommerce to guide their customers through a personalized shopping experience.
             <strong className="block font-semibold mt-3">

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 const Heading = () => {
   return (
     <h1 className="text-[1.7rem] sm:text-[2.5rem] max-w-[800px] mx-auto leading-[1.4] mb-1">

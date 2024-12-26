@@ -21,7 +21,7 @@ export default function Home() {
           >
             Get Started
             <span className="font-medium pl-1 opacity-75">
-              It's Free
+              It&apos;s Free
             </span>
           </Link>
           <Link

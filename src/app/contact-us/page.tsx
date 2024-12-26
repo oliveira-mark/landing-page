@@ -1,25 +1,31 @@
-'use client'
-import { useState } from "react";
-import Image from "next/image";
+'use client';
+import { useState } from 'react';
+import Image from 'next/image';
+
+interface Errors {
+  name?: string;
+  email?: string;
+  message?: string;
+}
 
 export default function ContactUs() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [errors, setErrors] = useState<any>({});
+  const [name, setName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
+  const [message, setMessage] = useState<string>('');
+  const [errors, setErrors] = useState<Errors>({});
 
-  const validate = () => {
-    const newErrors: any = {};
+  const validate = (): Errors => {
+    const newErrors: Errors = {};
     if (!name) {
-      newErrors.name = "Name is required.";
+      newErrors.name = 'Name is required.';
     }
     if (!email) {
-      newErrors.email = "Email is required.";
+      newErrors.email = 'Email is required.';
     } else if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = "Email is invalid.";
+      newErrors.email = 'Email is invalid.';
     }
     if (!message) {
-      newErrors.message = "Message is required.";
+      newErrors.message = 'Message is required.';
     }
 
     return newErrors;
@@ -42,7 +48,7 @@ export default function ContactUs() {
           Contact Us
         </h1>
         <p className="max-w-[800px] mx-auto text-[0.9rem] sm:text-[1.1rem] leading-[1.5] text-center opacity-75">
-          Have questions or need assistance? We're here to help you get the most out of QuizCommerce.
+          Have questions or need assistance? We&apos;re here to help you get the most out of QuizCommerce.
         </p>
 
         <form
@@ -56,13 +62,11 @@ export default function ContactUs() {
             height={65}
             className="mb-2"
           />
-          <h2 className="text-[28px] font-semibold mb-2">
-            Get in Touch with Us!
-          </h2>
+          <h2 className="text-[28px] font-semibold mb-2">Get in Touch with Us!</h2>
           <p className="text-[16px] opacity-75 mb-4">
             Our team is ready to assist you with any inquiries about QuizCommerce.
             <strong className="block font-semibold mt-3">
-              Fill out the form below and we'll get back to you shortly!
+              Fill out the form below and we&apos;ll get back to you shortly!
             </strong>
           </p>
 

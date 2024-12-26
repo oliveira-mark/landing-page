@@ -1,10 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const TopTiltle = () => {
-
-  const getRandomAvatar = (exclude = []) => {
-    let randomNum;
+  const getRandomAvatar = (exclude: number[] = []): number => {
+    let randomNum: number;
     do {
       randomNum = Math.floor(Math.random() * 9) + 1;
     } while (exclude.includes(randomNum));
@@ -38,12 +36,11 @@ const TopTiltle = () => {
         height={35}
         className="object-cover rounded-full ml-[-10px] mr-1 border-2 border-white"
       />
-      <p
-        className="text-[var(--color-text)] font-medium text-[0.8rem] sm:text-[0.9rem] leading-[1.1] text-center pr-3 pl-3 ml-2 border-l border-[#EBEBEB] py-1"
-      >
+      <p className="text-[var(--color-text)] font-medium text-[0.8rem] sm:text-[0.9rem] leading-[1.1] text-center pr-3 pl-3 ml-2 border-l border-[#EBEBEB] py-1">
         A product recommendation quiz for your eCommerce!
       </p>
     </div>
   );
 };
+
 export default TopTiltle;
