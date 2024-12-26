@@ -17,7 +17,7 @@ export default function Home() {
         <div className="flex gap-4 justify-center mt-3">
           <Link
             className="inline-flex bg-gradient-to-r from-[#531bce] to-[#793ffa] text-white px-3 py-3 sm:px-4 sm:py-3 rounded-md font-bold text-[0.7rem] sm:text-[0.8rem] border border-[#9868ff] relative"
-            href="/login"
+            href="/get-started"
           >
             Get Started
             <span className="font-medium pl-1 opacity-75">
@@ -26,7 +26,7 @@ export default function Home() {
           </Link>
           <Link
             className="inline-block bg-gradient-to-r from-[#F4F4F4] to-[#FFFFFF] text-black px-3 py-3 sm:px-4 sm:py-3 rounded-md font-medium text-[0.7rem] sm:text-[0.8rem] border border-[#E6E6E6] relative"
-            href="/login"
+            href="/contact-us"
           >
             Contact Us
             <span className="font-medium pl-1 opacity-50">

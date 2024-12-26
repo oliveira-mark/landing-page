@@ -19,7 +19,7 @@ const Navbar = () => {
           </div>
         </Link>
         <Link
-          href="/login"
+          href="/get-started"
           className="inline-flex bg-gradient-to-r from-[#531bce] to-[#793ffa] text-white px-3 py-3 sm:px-4 sm:py-3 rounded-md font-bold text-[0.6rem] sm:text-[0.8rem] border border-[#9868ff] relative">
             Get Started
             <span className="font-medium pl-1 opacity-75">
