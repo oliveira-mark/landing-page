@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const Heading = () => {
   return (
-    <h1 className="text-[2.5rem] max-w-[800px] mx-auto leading-[1.4] mb-0">
+    <h1 className="text-[1.7rem] sm:text-[2.5rem] max-w-[800px] mx-auto leading-[1.4] mb-1">
       A digital&nbsp;
-      <span className="relative w-full h-full border-2 border-[#793ffa] px-1.5 py-0">
+      <span className="relative w-fit mx-auto border-2 border-[#793ffa] px-1.5 py-0 whitespace-nowrap block sm:inline sm:w-full sm:h-full">
       <span className="absolute w-2.5 h-2.5 border-2 border-[#793ffa] left-[-6px] top-[-6px] bg-white"></span>
       <span className="absolute w-2.5 h-2.5 border-2 border-[#793ffa] left-[-6px] bottom-[-6px] bg-white"></span>
       <span className="absolute w-2.5 h-2.5 border-2 border-[#793ffa] right-[-6px] top-[-6px] bg-white"></span>
