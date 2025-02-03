@@ -10,7 +10,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/oliveira-mark/landing-page-quiz-product-recommendation">
+  <a href="https://github.com/oliveira-mark/landing-page">
     <img src="public/assets/img/logo-sales-with-quiz.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -19,11 +19,11 @@
   <p align="center">
     A digital Personal Shopper that does the selling for you!
     <br />
-    <a href="https://bymarcos.com/landing-page-quiz-product-recommendation/">View Demo</a>
+    <a href="https://bymarcos.com/landing-page/">View Demo</a>
     ·
-    <a href="https://github.com/oliveira-mark/landing-page-quiz-product-recommendation/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/oliveira-mark/landing-page/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/oliveira-mark/landing-page-quiz-product-recommendation/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/oliveira-mark/landing-page/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -68,11 +68,11 @@ Follow these steps to install and set up the project locally:
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/oliveira-mark/landing-page-quiz-product-recommendation.git
+   git clone https://github.com/oliveira-mark/landing-page.git
 
 2. Navigate to the project directory  
    ```bash
-   cd landing-page-quiz-product-recommendation
+   cd landing-page
 
 3. Install the project dependencies  
    ```bash
@@ -99,8 +99,8 @@ To use the application, follow these steps:
 
 ### Top contributors:
 
-<a href="https://github.com/oliveira-mark/landing-page-quiz-product-recommendation/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=oliveira-mark/landing-page-quiz-product-recommendation" alt="contrib.rocks image" />
+<a href="https://github.com/oliveira-mark/landing-page/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=oliveira-mark/landing-page" alt="contrib.rocks image" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -120,7 +120,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Marcos Oliveira - [@oliveira-mark](https://linkedin.com/in/oliveira-mark/) - hello@bymarcos.com
 
-Project Link: [https://github.com/oliveira-mark/landing-page-quiz-product-recommendation](https://github.com/oliveira-mark/landing-page-quiz-product-recommendation)
+Project Link: [https://github.com/oliveira-mark/landing-page](https://github.com/oliveira-mark/landing-page)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,16 +138,16 @@ Here are a few resources that were essential for this project:
 
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/oliveira-mark/landing-page-quiz-product-recommendation.svg?style=for-the-badge
-[contributors-url]: https://github.com/oliveira-mark/landing-page-quiz-product-recommendation/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/oliveira-mark/landing-page-quiz-product-recommendation.svg?style=for-the-badge
-[forks-url]: https://github.com/oliveira-mark/landing-page-quiz-product-recommendation/network/members
-[stars-shield]: https://img.shields.io/github/stars/oliveira-mark/landing-page-quiz-product-recommendation.svg?style=for-the-badge
-[stars-url]: https://github.com/oliveira-mark/landing-page-quiz-product-recommendation/stargazers
-[issues-shield]: https://img.shields.io/github/issues/oliveira-mark/landing-page-quiz-product-recommendation.svg?style=for-the-badge
-[issues-url]: https://github.com/oliveira-mark/landing-page-quiz-product-recommendation/issues
-[license-shield]: https://img.shields.io/github/license/oliveira-mark/landing-page-quiz-product-recommendation.svg?style=for-the-badge
-[license-url]: https://github.com/oliveira-mark/landing-page-quiz-product-recommendation/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/oliveira-mark/landing-page.svg?style=for-the-badge
+[contributors-url]: https://github.com/oliveira-mark/landing-page/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/oliveira-mark/landing-page.svg?style=for-the-badge
+[forks-url]: https://github.com/oliveira-mark/landing-page/network/members
+[stars-shield]: https://img.shields.io/github/stars/oliveira-mark/landing-page.svg?style=for-the-badge
+[stars-url]: https://github.com/oliveira-mark/landing-page/stargazers
+[issues-shield]: https://img.shields.io/github/issues/oliveira-mark/landing-page.svg?style=for-the-badge
+[issues-url]: https://github.com/oliveira-mark/landing-page/issues
+[license-shield]: https://img.shields.io/github/license/oliveira-mark/landing-page.svg?style=for-the-badge
+[license-url]: https://github.com/oliveira-mark/landing-page/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/oliveira-mark/
 [product-screenshot]: public/assets/img/screenshot.png
