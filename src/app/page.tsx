@@ -40,7 +40,7 @@ export default function Home() {
             alt="Cliente"
             width={800}
             height={400}
-            className="h-[400px] object-cover object-top w-[800px] sm:absolute sm:bottom-0 sm:left-1/2 sm:transform sm:-translate-x-1/2"
+            className="h-[35vh] object-cover object-top w-[800px] sm:absolute sm:bottom-0 sm:left-1/2 sm:transform sm:-translate-x-1/2"
           />
         </div>
       </main>
